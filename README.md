@@ -10,7 +10,7 @@ I will be following the course as outlined [here](https://edu.kyrylai.com/course
 I'll update this markdown file to include a summary as time progresses!
 
 
-Update - 2025-03-06
+**Update - 2025-03-06**
 
 This is my first update on the progress for the course and I'm catching up after a couple of weeks of illness.  Initial thoughts having gone through the infrastructure, data and experimental portions of the course? It's amazing to learn the "dark matter" that infra-level engineers have to deal with. From CI/CD to infra monitoring and setup, there is a lot under the hood for a 0-1 PM to keep in mind as they start and scale a startup. Setting the foundations right at the get-go is a critical decision and I wonder if this is something PMs can create time for in strategic maps. 
 

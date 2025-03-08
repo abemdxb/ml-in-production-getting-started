@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   pull_request:
     branches:
-      - main  # or the branch you want to target
+      - dev-branch  # or the branch you want to target
 
 jobs:
   build:
@@ -18,8 +18,8 @@ jobs:
 
       # Uncomment and configure the following steps if you want to push the image
 
-      # - name: Log in to Docker Hub
-      #   run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
-      # - name: Push Docker image
-      #   run: docker push yourusername/yourimage:latest
+      - name: Push Docker image
+        run: docker push abemdxb/ml-in-production:latest

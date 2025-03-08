@@ -1,4 +1,4 @@
-# Module 1 practice 
+# Module 1: Design Document
 
 [Design Document](https://docs.google.com/document/d/1wE5pdJ32uTs-keq29YnAhF9bjuAeH593KBSv9NxtxmY/edit?usp=sharing)
 

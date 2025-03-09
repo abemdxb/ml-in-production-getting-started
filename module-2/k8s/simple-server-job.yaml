@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: simple-server-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: simple-server
+          image: abemdxb/simple-server:latest
+          # Override the default CMD to run a short-lived command
+          command: ["python", "-c", "print('Job completed successfully')"]
+      restartPolicy: Never
+  backoffLimit: 3

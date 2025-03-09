@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-server-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simple-server
+  template:
+    metadata:
+      labels:
+        app: simple-server
+    spec:
+      containers:
+        - name: simple-server
+          image: abemdxb/simple-server:latest
+          ports:
+            - containerPort: 8000

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-server-pod
+spec:
+  containers:
+    - name: simple-server
+      image: abemdxb/simple-server:latest
+      ports:
+        - containerPort: 8000

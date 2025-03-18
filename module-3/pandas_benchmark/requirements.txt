@@ -1,0 +1,7 @@
+pandas>=1.3.0
+numpy>=1.20.0
+matplotlib>=3.4.0
+tabulate>=0.8.9
+pyarrow>=6.0.0  # For Parquet and Feather formats
+tables>=3.6.1   # For HDF5 format
+openpyxl>=3.0.9 # For Excel format

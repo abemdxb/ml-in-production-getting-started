@@ -1,0 +1,44 @@
+# Inference Performance Benchmark Results
+
+## Parameters
+ Parameter  Value
+   Samples 500000
+  Features     50
+ Processes      4
+Batch Size 125000
+
+## Results
+                 Metric     Value
+Single Process Time (s)  4.607445
+ Multi Process Time (s)   6.24465
+                Speedup  0.737823
+             Efficiency  0.184456
+           Verification    PASSED
+
+## System Information
+     Component                      Specification
+           CPU 8 physical cores, 16 logical cores
+        Memory                           15.79 GB
+Python Version                             3.12.2
+
+## Analysis: CPU Impact on Results
+
+Your CPU characteristics (8 physical cores, 16 logical cores) significantly influence these results:
+
+1. **Process vs. Core Allocation**: While we used 4 processes, how they're scheduled across physical and logical cores affects performance.
+
+2. **CPU Cache Utilization**: Single-process execution makes more efficient use of CPU caches. With multiple processes, each needs its own cache space, potentially causing more cache misses.
+
+3. **Memory Bandwidth Competition**: Multiple processes compete for memory bandwidth, which can become a bottleneck.
+
+4. **Process Scheduling Overhead**: Windows' process scheduler introduces overhead when managing multiple processes.
+
+5. **Data Transfer Costs**: The overhead of serializing/deserializing data between processes can be significant.
+
+Different CPU architectures (like server-grade CPUs with more cores, larger caches, or higher memory bandwidth) would likely show different performance characteristics with the same benchmark code.
+
+## Conclusion
+
+This benchmark demonstrates how to measure and compare inference performance between single and multiple processes. While our specific test case with your CPU didn't show a speedup with multiple processes (speedup < 1.0), the code provides a framework for testing different models and workloads.
+
+The benchmark can be easily modified to test different models, dataset sizes, and process configurations to find the optimal setup for specific machine learning inference tasks on your hardware.

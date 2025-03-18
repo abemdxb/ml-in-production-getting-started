@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module 3 practice 
 
 Written with the help of ChatGPT (verified via deployment)

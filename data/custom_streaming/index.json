@@ -1,0 +1,29 @@
+{
+  "samples": 1000,
+  "columns": {
+    "int_col_0": "int",
+    "float_col_1": "float",
+    "int_col_2": "int",
+    "float_col_3": "float",
+    "int_col_4": "int",
+    "float_col_5": "float",
+    "int_col_6": "int",
+    "float_col_7": "float",
+    "int_col_8": "int",
+    "float_col_9": "float",
+    "str_col_0": "str",
+    "str_col_1": "str",
+    "str_col_2": "str",
+    "str_col_3": "str",
+    "str_col_4": "str",
+    "str_col_5": "str",
+    "date_col_0": "str",
+    "date_col_1": "str",
+    "bool_col_0": "bool",
+    "bool_col_1": "bool",
+    "id": "str"
+  },
+  "shards": [
+    "shard.00000.parquet.zstd"
+  ]
+}
